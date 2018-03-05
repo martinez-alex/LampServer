@@ -11,9 +11,9 @@ mysql_secure_installation
 
 yum -y install httpd
 
-systemctl start httpd.service
+systemctl start httpd
 
-systemctl enable httpd.service
+systemctl enable httpd
 
 firewall-cmd --permanent --zone=public --add-service=http
 firewall-cmd --permanent --zone=public --add-service=https
